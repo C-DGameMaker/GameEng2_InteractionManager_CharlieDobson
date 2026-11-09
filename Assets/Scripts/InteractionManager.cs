@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,6 +7,7 @@ public class InteractionManager : MonoBehaviour
 {
     public FirstPersonCamera playerCamera;
     public RaycastHit hitLine;
+    public TextMeshProUGUI currentInteractableObject;
 
     private void Start()
     {
@@ -42,6 +44,14 @@ public class InteractionManager : MonoBehaviour
         if(Physics.Raycast(playerCamera.interactionLine, out RaycastHit hit, playerCamera.interactionRange))
         {
             hitLine = hit;
+            if(hit.collider.TryGetComponent(out IInteractable interactable))
+            {
+                currentInteractableObject.text = "You can interact with: " + hit.collider.name;
+            }
+            else
+            {
+                currentInteractableObject.text = " ";
+            }
         }
 
     }
