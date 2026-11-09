@@ -36,7 +36,10 @@ public class PlayerMovement : MonoBehaviour
     private void HandlePlayerMovement()
     {
         if (canMove == false) return;
-        Vector3 move = new Vector3(movementInput.x, 0, movementInput.y) * playerSpeed * Time.deltaTime;
+        Vector3 move = transform.right * movementInput.x + transform.forward * movementInput.y;
+
+        move *= playerSpeed * Time.deltaTime;
+
         playerRB.MovePosition(playerRB.position + move);
     }
 
