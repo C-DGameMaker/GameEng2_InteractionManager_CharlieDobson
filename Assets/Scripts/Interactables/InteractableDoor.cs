@@ -6,19 +6,21 @@ public class InteractableDoor : MonoBehaviour, IInteractable
 
     public Vector3 openPosition;
 
+    public GameObject door;
+
     public void Start()
     {
         normalPosition = transform.position;
     }
     public void Interact()
     {
-        if(transform.position == normalPosition)
+        if(door.transform.position == normalPosition)
         {
-            transform.position = openPosition;
+            door.transform.position = openPosition;
         }
         else
         {
-            transform.position = normalPosition;
+            door.transform.position = normalPosition;
         }
 
     }

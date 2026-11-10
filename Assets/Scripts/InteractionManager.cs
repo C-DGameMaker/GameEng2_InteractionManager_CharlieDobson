@@ -26,16 +26,13 @@ public class InteractionManager : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
-            Debug.Log("Got here");
-            if(hitLine.collider.TryGetComponent(out IInteractable interactable))
+        if(context.started)
+        {
+            if (hitLine.collider.TryGetComponent(out IInteractable interactable))
             {
                 interactable.Interact();
             }
-            else
-            {
-                Debug.Log("Can't interact");
-                return;
-            }
+        }
         
     }
 
