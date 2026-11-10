@@ -677,7 +677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableDoor
   normalPosition: {x: -10, y: 2, z: 5.7}
-  openPosition: {x: -10, y: 2, z: 2.7}
+  openPosition: {x: -10, y: 2, z: 3.7}
+  door: {fileID: 562110988}
 --- !u!23 &562110991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -703,7 +704,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 743c44f134de17f40971ba754a414d7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -744,7 +745,7 @@ Transform:
   m_GameObject: {fileID: 562110988}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.00000046193594, z: -0, w: 1}
-  m_LocalPosition: {x: -0.56462, y: -1.7462499, z: 5.5563498}
+  m_LocalPosition: {x: -10, y: 2, z: 5.7}
   m_LocalScale: {x: 0.5, y: 6, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -775,7 +776,7 @@ Transform:
   m_GameObject: {fileID: 575929144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.43538, y: 3.74625, z: 0.14365}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -798,7 +799,7 @@ GameObject:
   - component: {fileID: 795174562}
   - component: {fileID: 795174561}
   m_Layer: 0
-  m_Name: Interactable Cube
+  m_Name: Color Changing Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -813,7 +814,7 @@ Transform:
   m_GameObject: {fileID: 795174559}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.38268322, z: -0, w: 0.9238797}
-  m_LocalPosition: {x: 2.28538, y: -3.28454, z: 14.143921}
+  m_LocalPosition: {x: -7.15, y: 0.46170998, z: 14.287571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1597,7 +1598,7 @@ GameObject:
   - component: {fileID: 1683047498}
   - component: {fileID: 1683047497}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2296,7 +2297,7 @@ Transform:
   m_GameObject: {fileID: 2076160022}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5146198, y: -2.3845398, z: -0.05608028}
+  m_LocalPosition: {x: -9.95, y: 1.3617101, z: 0.08756971}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
